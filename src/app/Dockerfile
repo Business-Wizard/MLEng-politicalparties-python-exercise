@@ -1,5 +1,5 @@
 # Dockerfile for demo
-FROM python:3.9
+FROM python:3.10
 
 # Set a directory for the app
 WORKDIR /usr/src/app
