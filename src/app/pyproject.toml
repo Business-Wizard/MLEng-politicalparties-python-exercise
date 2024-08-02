@@ -6,7 +6,7 @@ authors = [
     { name = "Business-Wizard", email = "49175856+Business-Wizard@users.noreply.github.com" },
 ]
 dependencies = ["requests>=2.32.3", "streamlit>=1.37.0"]
-requires-python = ">= 3.8"
+requires-python = ">= 3.10"
 
 [build-system]
 requires = ["hatchling"]
