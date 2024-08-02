@@ -1,15 +1,15 @@
 services:
   app:
     build:
-      context: .
-      dockerfile: ./app/app.containerfile
+      context: "./src/"
+      dockerfile: ./app.containerfile
     ports:
       - "8501:8501"
 
   model_inference_endpoint:
     build:
-      context: .
-      dockerfile: ./model-inference-endpoint/inference.containerfile
+      context: "./src/"
+      dockerfile: ./inference.containerfile
     volumes:
       - ../data:/usr/src/app/data
     ports:
