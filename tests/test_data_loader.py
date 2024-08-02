@@ -11,8 +11,7 @@ def stub_df() -> pd.DataFrame:
         "Party": ['Republican', 'Democrat', 'Republican'],
         "Tweet": ['blah!23564 https://hello.com', 'bloh@123skdjfps', 1234567]
     }
-    df = pd.DataFrame(data=data, index=[0,1, 2])
-    return df
+    return pd.DataFrame(data=data, index=[0,1, 2])
 
 @pytest.fixture
 def data_loader(mocker, stub_df):
