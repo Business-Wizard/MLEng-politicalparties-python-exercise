@@ -11,6 +11,6 @@ services:
       context: "./src/"
       dockerfile: ./inference.containerfile
     volumes:
-      - ../data:/usr/src/app/data
+      - ../data:/app/data
     ports:
       - "8000:8000"

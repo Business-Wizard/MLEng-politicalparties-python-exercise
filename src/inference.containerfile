@@ -1,5 +1,5 @@
 FROM python:3.10
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY ./model_inference_endpoint/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
