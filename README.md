@@ -6,19 +6,28 @@ This repository contains the necessary setup and code base to help guide you in 
 
 ## Project Setup
 
-### Pre-requisites
+### Default, manual
+
+#### Pre-requisites
 
 Please make sure you have the following software installed
 
 - Python (3.10 or 3.11)
 
-### Install all python dependencies
+#### Install all python dependencies
 
 Before you install dependencies make sure you add your python path to the makefile.
 
 ```bash
 make install
 ```
+
+### Nix-Shell
+
+Nix is able to create a shell environment that has all the tool dependencies needed, such as docker, docker-compose, python, etc.
+
+1. Install Nix package manager, [instructions](https://nixos.org/download/)
+1. Enter the nix-shell, `nix-shell`
 
 ### Run tests & checks
 
