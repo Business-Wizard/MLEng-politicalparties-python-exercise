@@ -9,7 +9,7 @@ services:
   model_inference_endpoint:
     build:
       context: .
-      dockerfile: ./model-inference-endpoint/Dockerfile
+      dockerfile: ./model-inference-endpoint/inference.containerfile
     volumes:
       - ../data:/usr/src/app/data
     ports:
