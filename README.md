@@ -24,7 +24,7 @@ make install
 
 ### Nix-Shell
 
-Nix is able to create a shell environment that has all the tool dependencies needed, such as docker, docker-compose, python, etc.
+Nix is able to create a shell environment that has all the tool dependencies needed, such as docker, python, etc.
 
 1. Install Nix package manager, [instructions](https://nixos.org/download/)
 1. Enter the nix-shell, `nix-shell`

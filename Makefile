@@ -16,7 +16,7 @@ test:
 	pytest tests
 
 run:
-	docker-compose -f src/compose.yml up 
+	docker compose -f src/compose.yml up
 
 clean:
 	rm -rf $(VENV_DIR)
