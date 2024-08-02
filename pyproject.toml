@@ -1,0 +1,27 @@
+[project]
+name = "mle-interview"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Shraddha Surana", email = "ssurana@thoughtworks.com" },
+    { name = "twmeissane", email = "no-reply@thoughtworks.com" },
+    { name = "sahgerlad", email = "no-reply@thoughtworks.com" },
+    { name = "Joseph Wilson", email = "joseph.wilson@thoughtworks.com" },
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = ["numpy>=2.0.0", "pandas>=2.2.2", "scikit-learn>=1.5.1"]
+
+[tool.rye]
+managed = true
+dev-dependencies = ["pytest>=8.2.2", "pytest-mock>=3.14.0"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mle_interview"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
