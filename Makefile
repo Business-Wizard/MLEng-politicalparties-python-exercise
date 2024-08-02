@@ -16,10 +16,10 @@ test:
 	pytest tests
 
 run:
-	docker compose -f src/compose.yml up
+	docker compose -f compose.yml up
 
 clean:
-	docker compose -f src/compose.yml down
+	docker compose -f compose.yml down
 	rm -rf $(VENV_DIR)
 	find . -type f -name '*.pyc' -delete
 	find . -type d -name '__pycache__' -delete
